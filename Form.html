@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>CV.html</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="general.css"/>
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+</head>
+
+<body>
+<div
+        id="contents"
+        style="
+        display: flex;
+        justify-content: space-evenly;
+        top: 0;
+        position: sticky;
+        background-color: var(--background-color);
+      "
+>
+    <a href="Home.html"><h1 class="hover">&nbspHome&nbsp</h1></a>
+    <a href="CV.html"><h1 class="hover">&nbspCV&nbsp</h1></a>
+    <a href="Form.html"><h1 class="hover">&nbspForm&nbsp</h1></a>
+    <script src="brackets.js"></script>
+</div>
+<form action="mailto:vlad_george.balas@stud.acs.upb.ro" method="get">
+    <h2>Contact</h2>
+    <label for="email">
+        <span>email:</span>
+        <input class="field" type="text" id="email" name="email"
+                style="border:none; user-focus: none"/>
+    </label>
+    <br/>
+    <label for="subject">
+        <span>name:</span>
+        <input class="field" type="text" id="subject" name="subject"
+               style="border:none; user-focus: none"/>
+    </label>
+    <br/>
+    <input type="submit" value="Send"><h1>Send</h1></input>
+</form>
+<script src="pointers.js"></script>
+</body>
+</html>

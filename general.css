@@ -1,0 +1,59 @@
+body {
+  --calc-wdth: calc((100vw - 750px) / 2);
+  margin-left: max(var(--calc-wdth), 100px);
+  margin-right: max(var(--calc-wdth), 100px);
+  margin-top: 25px;
+  max-width: 750px;
+  position: relative;
+
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100 - 800;
+  font-style: normal;
+
+  --variable: black;
+  color: var(--variable);
+
+  --background-color: white;
+  background-color: var(--background-color);
+}
+
+hr {
+  height: 0px;
+  border-radius: 1px;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: color-mix(in srgb, var(--variable) 50%, white 50%);
+}
+
+h1.hover:hover {
+  color: var(--variable);
+}
+
+h1:side{
+  color: var(--color)
+}
+
+li {
+  list-style-type: "|=>";
+}
+
+li li {
+  list-style-type: "=>";
+}
+
+::selection {
+  color: var(--background-color);
+  background-color: color-mix(in srgb, var(--variable) 60%, white 40%);
+  border-radius: 5px;
+}
+
+img{
+    border-radius: 10px;
+}
